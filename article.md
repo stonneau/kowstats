@@ -1,4 +1,4 @@
-# Does it matter how you score a Kings of War tournament?
+# How to choose a scoring system system for your tournament?
 ### A data-driven comparison of Northern Kings, Black Jack and their variants
 
 ---
