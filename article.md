@@ -7,7 +7,7 @@
 
 <div style="text-align: justify">
 What makes a tournament experience successful? There are many aspects to these questions: the venue, the organisation, the tables, food etc.
-I would like to tackle the question from the perspective of the actual games. As a Tournament Organiser (TO), what should you prioritise when designing a pairing and scoring system? Do you want a system that maximises the chances that the best player wins the event? Or would you rather have a system that keeps games as balanced and enjoyable as possible for players of all skill levels? And for that matter, what does it even mean to be "the best player"?
+I would like to tackle the question from the perspective of the actual games played. As a Tournament Organiser (TO), what should you prioritise when designing a pairing and scoring system? Do you want a system that maximises the chances that the best player wins the event? Or would you rather have a system that keeps games as balanced and enjoyable as possible for players of all skill levels? And for that matter, what does it even mean to be "the best player"?
 
 In this article, I try to define and quantify a number of tournament criteria. I then compare two scoring systems, Northern Kings and Black Jack, to see how they perform against these criteria. I also study how small variations of these systems can affect the overall tournament experience.
 
