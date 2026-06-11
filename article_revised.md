@@ -17,7 +17,7 @@ To do this, I use Monte Carlo simulations — which is a fancy way of saying tha
 
 The results suggest that, for the criteria considered here, there is little reason to use the Black Jack system as a default. Northern Kings (NK) remains a strong and fairly robust Swiss baseline, especially if you care about giving players balanced games throughout the event, while a pool stage followed by NK is the strongest option if your main goal is raw ranking accuracy rather than balance and simplicity.
 
-We also look at how these findings hold up at a much larger scale, using the Clash of Kings UK 2025 as a case study: 192 players, 6 rounds, with an ELO distribution built from real competitive data.
+We also look at how these findings hold up at a much larger scale, using the Clash of Kings UK 2025 as a case study: 192 players, 6 rounds, with an ELO distribution built from real competitive data. In this case, we show that the Northern Kings scoring system is the most reliable.
 </div>
 
 ---
@@ -48,7 +48,7 @@ These are the most traditional systems in the set.
 - **Northern Kings (NK)** uses a score that combines result, scenario, and kill points. That score drives both pairings and final standings.
 - **Black Jack (BJ)** also uses a running score, but it reacts more strongly to margin. Bigger wins and heavier losses matter more.
 
-These are the most commonly used systems in the UK.
+These are the most commonly used systems in the UK, and they both propose  game-specific means to evaluate the ranking of a player additionally to their number of wins, draws and losses. 
 
 ### 2. Fairness-first Swiss systems
 
@@ -73,9 +73,9 @@ Pool formats ask more from the TO, but they also sort the field earlier. As we w
 
 ## III. What are we measuring?
 
-All values below run from **0 to 1, where lower is better**. In plain English, a score of 0.20 means the system gets that question wrong about one time in five.
+All the criteria listed below have been translated into a formula that computes a mark to the outcome of a tournament between **0 to 1, where lower is better**. In plain English, a score of 0.20 means the system gets that question wrong about one time in five.
 
-To see the details of the formulas used, we invite the reader to refer to the notebook where we describe these measures in depth.
+To see the details of the formulas used, I invite the reader to refer to the notebook where we describe these measures in depth.
 
 ### Fairness criteria
 
