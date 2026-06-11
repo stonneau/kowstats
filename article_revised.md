@@ -16,6 +16,8 @@ The goal is not to find the one perfect scoring system. Different tournaments ha
 To do this, I use Monte Carlo simulations — which is a fancy way of saying that I let a computer play out thousands of tournaments and record the results. This is equivalent to throwing a lot of dice, which seems appropriate for evaluating a Kings of War pairing system.
 
 The results suggest that, for the criteria considered here, there is little reason to use the Black Jack system as a default. Northern Kings (NK) remains a strong and fairly robust Swiss baseline, especially if you care about giving players balanced games throughout the event, while a pool stage followed by NK is the strongest option if your main goal is raw ranking accuracy rather than balance and simplicity.
+
+We also look at how these findings hold up at a much larger scale, using the Clash of Kings UK 2025 as a case study: 192 players, 6 rounds, with an ELO distribution built from real competitive data.
 </div>
 
 ---
@@ -206,7 +208,35 @@ The cost is accuracy: elo distance rises to **0.253** compared to **0.189** for 
 
 ---
 
-## V. Conclusion
+## V. Clash of Kings: 192 players, 6 rounds - Nothern Kings wins by far!
+
+The 32-player, 5-round baseline covers the most common tournament format. But some events are structurally different. The Clash of Kings UK is one of the largest Kings of War events in the world: the 2025 edition attracted 194 players across 6 rounds. At that scale, the same questions take on a different shape. 
+
+**The scale problem.** With 192 (we rounded down to faciliate testing the pool configuration) players and 6 rounds, each player faces 6 opponents out of a possible 191 — about 3% of the field. Even the strongest player has very little room to demonstrate their edge. No scoring system can fully compensate for that: the champion wins the event less than 30% of the time under any system tested.
+
+**Building the player pool.** Rather than a synthetic ELO distribution, we matched the 194 CoK UK 2025 participants against the European KoW ELO database published at *kingsofwarmasters.fr*. Players not found in the database were assigned estimated ratings. A kernel density estimate of the resulting distribution was used to resample 192-player fields for each simulation. The pool format was adjusted to 3+3: three pool rounds then three Swiss rounds, for a total of 6 — matching the Swiss format.
+
+### What changes at 192 players
+
+The overall structure of results is unchanged: fairness-first systems remain perfect on wins and schedule strength, score-first systems lead on ranking accuracy, BJ remains the worst choice for wins logic. Three differences stand out.
+
+**Games balance improves everywhere.** With 192 players available at each score level, Swiss pairings become much more precise. NK drops from **0.210** to **0.165**, Pool NK from **0.257** to **0.185**. The gap between Swiss and pool formats also narrows significantly.
+
+**Pool NK regains its full-ranking accuracy advantage** (**0.214** vs NK's **0.231**). The early sorting from the pool phase pays off across the whole field. However, Pool NK no longer leads on top-3 accuracy: NK is better here (**0.500** vs **0.554**). At this scale, three pool rounds are not enough additional information to guarantee the strongest player reaches the podium.
+
+**Fairness-first systems become very costly.** At 32 players, NK|WDL+SOS had a top-3 failure rate of **0.427** — worse than NK but tolerable. At 192 players, it rises to **0.756**. WDL+SOS reaches **0.874** on winner accuracy: the strongest player wins the event only about **13%** of the time. If ranking accuracy matters at all in a large competitive event, the fairness-first accuracy cost is hard to justify.
+
+### What to use for a large-format event
+
+**NK is the clearest all-round recommendation.** Best podium accuracy (**0.500** top-3 failure rate), best game balance of any Swiss system (**0.165**), and solid full-ranking quality (**0.231**). Its simplicity is also an asset when managing 192 players over 6 rounds.
+
+**Pool NK is worth considering if full-field ranking accuracy is the priority** and you have the infrastructure to run 48 pools. It leads on elo distance (**0.214**) but does not improve the podium question, and the organisational cost is significant.
+
+**Fairness-first systems are a poor fit for large competitive events.** NK|WDL+SOS remains defensible if player trust in the standings is the priority — but WDL+SOS, BJ|WDL+SOS, and their pool equivalents carry accuracy costs at this scale that are hard to justify for a flagship event.
+
+---
+
+## VI. Conclusion
 
 There is no perfect scoring system. But the current results do point to a clearer set of recommendations.
 
@@ -222,4 +252,4 @@ And one final point remains true whatever system you choose: **a 32-player, 5-ro
 
 ---
 
-*Based on 1,000 Monte Carlo simulations of 32-player, 5-round tournaments. All systems were evaluated on identical pre-generated game outcomes.*
+*Sections I–IV based on 1,000 Monte Carlo simulations of 32-player, 5-round tournaments. Section V uses 500 simulations of 192-player, 6-round events (3+3 pool format) with an ELO distribution derived from the CoK UK 2025 player list.*
