@@ -248,6 +248,8 @@ There is no perfect scoring system. But the current results do point to a cleare
 
 **There is still little reason to choose Black Jack as a default.** Its trade-offs are too often the wrong ones.
 
+For very large formats such as Clash Of Kings, it seems that Northern Kings is the clear choice.
+
 And one final point remains true whatever system you choose: **a 32-player, 5-round event cannot fully separate skill from variance**. The scoring system matters, but the limits of the format matter too.
 
 ---
