@@ -113,12 +113,12 @@ The table below shows how each system performs across all ten criteria. Read eac
 |-----------|:----------:|:--------------:|:--------:|:---------:|:---------:|
 | **Wins rank higher** | 🔴 0.32 | 🟡 0.10 | 🟢 0.00 | 🟢 0.00 | 🟢 0.00 |
 | **No submariner effect** | 🔴 0.33 | 🟠 0.12 | 🟢 0.02 | 🟢 0.02 | 🟢 0.03 |
-| **Balanced games** | 🟡 0.25 | 🟢 0.24 | 🟠 0.26 | 🟢 0.24 | 🟡 0.25 |
+| **Balanced games** | 🟡 0.25 | 🟢 0.24 | 🟡 0.26 | 🟢 0.24 | 🟡 0.25 |
 | **Tough schedule rewarded** | 🔴 0.34 | 🔴 0.37 | 🟢 0.00 | 🟢 0.00 | 🟢 0.00 |
-| **No weak-schedule boost** | 🟡 0.31 | 🔴 0.39 | 🟢 0.27 | 🟠 0.32 | 🟢 0.28 |
+| **No weak-schedule boost** | 🟡 0.31 | 🔴 0.39 | 🟢 0.27 | 🟡 0.32 | 🟡 0.28 |
 | **Champion wins the event** | 🟡 0.74 | 🟢 0.73 | 🔴 0.81 | 🔴 0.81 | 🔴 0.80 |
-| **Champion in the top 3** | 🔴 0.56 | 🟠 0.53 | 🟡 0.43 | 🟢 0.38 | 🟢 0.41 |
-| **Overall ranking quality** | 🟢 0.21 | 🟢 0.21 | 🟠 0.27 | 🔴 0.28 | 🔴 0.30 |
+| **Champion in the top 3** | 🔴 0.56 | 🔴 0.53 | 🟠 0.43 | 🟢 0.38 | 🟠 0.41 |
+| **Overall ranking quality** | 🟢 0.21 | 🟢 0.21 | 🟠 0.27 | 🟠 0.28 | 🟠 0.30 |
 | **Top 10 ranking quality** | 🟢 0.33 | 🟡 0.34 | 🟠 0.36 | 🟠 0.37 | 🔴 0.39 |
 | **Bigger win rewarded** *(see note)* | 🟡 0.25 | 🟢 0.16 | 🔴 0.41 | 🟠 0.34 | 🟠 0.34 |
 
